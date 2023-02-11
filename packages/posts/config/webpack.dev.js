@@ -3,8 +3,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const commonConfig = require("./webpack.common");
 const packageJson = require("../package.json");
 
-const PORT = 8080;
-const POSTS_PORT = 8081
+const PORT = 8081;
 
 const devConfig = {
   mode: "development",
@@ -18,9 +17,10 @@ const devConfig = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "container",
-      remotes: {
-        posts: `posts@http://localhost:${POSTS_PORT}/remoteEntry.js`
+      name: "posts",
+      filename: 'remoteEntry.js',
+      exposes: {
+        './PostsApp': './src/bootstrap'
       },
       shared: packageJson.dependencies,
     }),

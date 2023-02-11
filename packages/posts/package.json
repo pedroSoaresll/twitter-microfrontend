@@ -1,5 +1,5 @@
 {
-  "name": "twitter-container",
+  "name": "twitter-posts",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -33,7 +33,7 @@
     "webpack-dev-server": "^4.11.1",
     "webpack-merge": "^5.8.0"
   },
-  "description": "Container application",
+  "description": "Posts application",
   "scripts": {
     "build": "webpack --config config/webpack.prod.js",
     "build:dev": "webpack --mode=development --config config/webpack.dev.js",

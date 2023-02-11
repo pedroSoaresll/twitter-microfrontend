@@ -2,6 +2,7 @@ import './main.css'
 import { FC } from 'react'
 
 import { Menu } from '@features/menu'
+import { Posts } from '@features/posts'
 
 const App: FC = () => {
   return (
@@ -12,8 +13,8 @@ const App: FC = () => {
 
       <main className="flex items-start flex-row grow">
         <div className="w-[990px] flex justify-between">
-          <div className="flex w-[600px]  bg-slate-300">
-            {/* post content */}
+          <div className="flex w-[600px]">
+            <Posts />
           </div>
 
           <div className="flex w-[350px] bg-slate-100">
