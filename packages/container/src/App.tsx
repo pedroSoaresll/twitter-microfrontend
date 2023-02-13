@@ -17,7 +17,7 @@ const App: FC = () => {
             <Posts />
           </div>
 
-          <div className="flex w-[350px] bg-slate-100">
+          <div className="flex w-[350px] bg-slate-100 dark:bg-gray-900">
             {/* empty space, just to guarantee the correct layout */}
           </div>
         </div>

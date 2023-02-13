@@ -6,12 +6,12 @@ const profileURL =
 
 export const NewTweet: FC = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col border-b dark:border-b-gray-700 border-b-gray-200 pb-2">
       <div className="flex items-center py-3">
         <Avatar profileURL={profileURL} className="mr-3" />
         <input
           type="text"
-          className="text-xl"
+          className="text-xl bg-transparent border-none flex-1"
           placeholder="What's happening?"
         />
       </div>
