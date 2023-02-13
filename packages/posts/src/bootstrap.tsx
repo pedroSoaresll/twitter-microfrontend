@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client'
-import { App } from './App'
+import { App } from './app'
 
 const isDevelopment = process.env.NODE_ENV === 'development'
 

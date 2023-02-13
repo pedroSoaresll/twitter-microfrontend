@@ -7,13 +7,13 @@ import { Posts } from '@features/posts'
 const App: FC = () => {
   return (
     <div className="w-full flex flex-row flex-auto">
-      <header className="flex items-end flex-col grow">
+      <header className="flex items-end flex-col grow border-r dark:border-r-gray-700 border-r-gray-200">
         <Menu />
       </header>
 
       <main className="flex items-start flex-row grow">
         <div className="w-[990px] flex justify-between">
-          <div className="flex w-[600px]">
+          <div className="flex w-[600px] border-r dark:border-r-gray-700 border-r-gray-200">
             <Posts />
           </div>
 
